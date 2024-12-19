@@ -12,9 +12,9 @@ def ApiOverview(request):
         'all_items':'/list/',
         'Search by Category':'/?category=category_name',
         'Search by Sub Category':'/?subcategory=subcategory_name',
-        'Delete Item':'/item/pk/delete',
+        'Delete Item':'/item/id/delete',
         'Add Item':'/create',
-        'Update Item': '/update/pk'
+        'Update Item': '/update/id'
     }
     return Response(api_urls)
 
